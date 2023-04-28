@@ -10,7 +10,7 @@ Package: libpaho-mqttpp-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: libpaho-mqttpp3-1 (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: Eclipse Paho MQTT C++ Client Library - development files
  This library enables C++11 applications to connect to an MQTT broker,
  publish messages to the broker, and to subscribe to topics and receive
