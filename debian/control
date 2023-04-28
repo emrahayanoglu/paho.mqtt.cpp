@@ -2,7 +2,7 @@ Source: paho.mqtt.cpp
 Section: libs
 Priority: optional
 Maintainer: Emrah Ayanoglu <emrah@cheetahtech.co>
-Build-Depends: cmake, debhelper-compat (= 12), libssl-dev, libpaho-mqtt-dev (>= 1.3.8)
+Build-Depends: cmake, debhelper-compat (= 12), libssl-dev, libpaho-mqtt-dev (>= 1.3.8), libc6, libstdc++6
 Standards-Version: 4.5.0
 Homepage: https://github.com/emrahayanoglu/paho.mqtt.cpp
 
