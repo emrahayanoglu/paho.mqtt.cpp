@@ -1,0 +1,654 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: paho.mqtt.cpp
+Upstream-Contact: <preferred name and address to reach the upstream project>
+Source: <url://example.com>
+#
+# Please double check copyright with the licensecheck(1) command.
+
+Files:     src/client.cpp
+           src/create_options.cpp
+           src/iclient_persistence.cpp
+           src/message.cpp
+           src/mqtt/buffer_ref.h
+           src/mqtt/buffer_view.h
+           src/mqtt/callback.h
+           src/mqtt/client.h
+           src/mqtt/connect_options.h
+           src/mqtt/create_options.h
+           src/mqtt/delivery_token.h
+           src/mqtt/disconnect_options.h
+           src/mqtt/exception.h
+           src/mqtt/iaction_listener.h
+           src/mqtt/iasync_client.h
+           src/mqtt/iclient_persistence.h
+           src/mqtt/properties.h
+           src/mqtt/server_response.h
+           src/mqtt/string_collection.h
+           src/mqtt/subscribe_options.h
+           src/mqtt/thread_queue.h
+           src/mqtt/topic.h
+           src/mqtt/types.h
+           src/properties.cpp
+           src/response_options.cpp
+           src/samples/async_consume.cpp
+           src/samples/async_publish.cpp
+           src/samples/async_publish_time.cpp
+           src/samples/async_subscribe.cpp
+           src/samples/data_publish.cpp
+           src/samples/mqttpp_chat.cpp
+           src/samples/multithr_pub_sub.cpp
+           src/samples/pub_speed_test.cpp
+           src/samples/rpc_math_cli.cpp
+           src/samples/rpc_math_srvr.cpp
+           src/samples/ssl_publish.cpp
+           src/samples/sync_consume.cpp
+           src/samples/sync_consume_v5.cpp
+           src/samples/sync_publish.cpp
+           src/samples/sync_reconnect.cpp
+           src/samples/topic_publish.cpp
+           src/samples/ws_publish.cpp
+           src/string_collection.cpp
+           src/subscribe_options.cpp
+           src/topic.cpp
+           test/unit/test_buffer_ref.cpp
+           test/unit/test_create_options.cpp
+           test/unit/test_message.cpp
+           test/unit/test_string_collection.cpp
+           test/unit/test_will_options.cpp
+Copyright: 2013-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation and documentation
+
+Files:     .editorconfig
+           .gitignore
+           .travis.yml
+           CHANGELOG.md
+           CODING_STYLE.md
+           CONTRIBUTING.md
+           Doxyfile
+           appveyor.yml
+           buildtst.sh
+           cmake/CMakeLists.txt
+           cmake/CPackDebConfig.cmake
+           cmake/FindPahoMqttC.cmake
+           cmake/PahoMqttCppConfig.cmake.in
+           devenv.sh
+           dist/Makefile
+           dist/paho-cpp.spec
+           doc/.gitignore
+           doc/.include
+           doc/Doxyfile.cmake
+           doc/Doxyfile.in
+           doc/pahologo.png
+           install_catch2.sh
+           install_paho_mqtt_c.sh
+           m4/.gitignore
+           m4/README
+           src/disconnect_options.cpp
+           src/mqtt/response_options.h
+           src/samples/.gitignore
+           test/unit/test_properties.cpp
+           travis_build.sh
+           travis_install.sh
+Copyright: __NO_COPYRIGHT_NOR_LICENSE__
+License:   __NO_COPYRIGHT_NOR_LICENSE__
+
+Files:     src/async_client.cpp
+           src/mqtt/async_client.h
+           src/token.cpp
+Copyright: 2013-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation and documentation
+ Frank Pagliughi - MQTT v5 support
+
+Files:     src/mqtt/will_options.h
+           src/will_options.cpp
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2016-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+ Frank Pagliughi - added copy & move operations
+
+Files:     m4/m4_ax_cxx_compile_stdcxx.m4
+           m4/m4_ax_cxx_compile_stdcxx_11.m4
+Copyright: 2008 Benjamin Kosnik <bkoz@redhat.com>
+           2012 Zack Weinberg <zackw@panix.com>
+           2013 Roy Stogner <roystgnr@ices.utexas.edu>
+           2014-2015 Google Inc.; contributed  Alexey Sokolov <sokolov@google.com>
+           2015 Moritz Klammler <moritz@klammler.eu>
+           2015 Paul Norman <penorman@mac.com>
+License:   __AUTO_PERMISSIVE__
+ Autogenerated files with permissive licenses.
+
+Files:     test/unit/test_persistence.cpp
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+ Frank Pagliughi - Converted to use Catch2
+
+Files:     test/unit/mock_persistence.h
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+ Frank Pagliughi - Renamed 'mock', refactored for coding conventions
+
+Files:     CMakeLists.txt
+Copyright: 2016-2017 Guilherme Maciel Ferreira
+           2017 Frank Pagliughi
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Maciel Ferreira - initial version
+ Frank Pagliughi
+ *******************************************************************************/
+ .
+ Note: on OS X you should install XCode and the associated command-line tools
+ .
+ cmake flags
+
+Files:     src/connect_options.cpp
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2017-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+ Frank Pagliughi - Copy and move operations. Bug fixes.
+
+Files:     epl-v10
+Copyright: __NO_COPYRIGHT__ in: epl-v10
+License:   __UNKNOWN__
+ _LONG_LINE_(1255chars.) starting with: Everyone is permitted to copy and distribute copies of this Agre
+ .
+ This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
+
+Files:     README.md
+Copyright: 2012 IBM Corp
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+
+Files:     src/mqtt/ssl_options.h
+Copyright: 2016 Guilherme Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2016-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Ferreira - initial implementation and documentation
+ Frank Pagliughi - added copy & move operations
+ Frank Pagliughi - upgraded compatibility to Paho C 1.3
+
+Files:     test/unit/mock_callback.h
+Copyright: 2017 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation
+ Frank Pagliughi - Renamed 'mock', and refactored for coding
+ conventions
+
+Files:     test/unit/test_ssl_options.cpp
+Copyright: 2016-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation and documentation
+ Guilherme M. Ferreira - add more test cases
+ Frank Pagliughi - Converted to Catch2
+
+Files:     src/mqtt/message.h
+Copyright: 2013-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation and documentation
+ Frank Pagliughi - MQTT v5 support (properties)
+
+Files:     test/unit/test_disconnect_options.cpp
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+
+Files:     edl-v10
+Copyright: 2007 Eclipse Foundation, Inc. and its licensors.
+License:   __UNKNOWN__
+ Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+ .
+ Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+ Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+ Neither the name of the Eclipse Foundation, Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files:     doc/CMakeLists.txt
+Copyright: __NO_COPYRIGHT__ in: doc/CMakeLists.txt
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Maciel Ferreira - initial version
+ *******************************************************************************/
+ .
+ documentation settings
+
+Files:     test/unit/mock_async_client.h
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation
+ Frank Pagliughi - updated and renamed
+
+Files:     src/ssl_options.cpp
+Copyright: 2016 Guilherme Ferreira <guilherme.maciel.ferreira@gmail.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Ferreira - initial implementation and documentation
+ Frank Pagliughi - added copy & move operations
+
+Files:     test/unit/mock_action_listener.h
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation
+ Frank Pagliughi - prepared for Catch2, renamed 'mock'
+
+Files:     test/unit/CMakeLists.txt
+Copyright: 2019 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - Initial implementation
+ *******************************************************************************/
+
+Files:     test/unit/test_async_client.cpp
+Copyright: 2017 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+ Frank Pagliughi - Converted to Catch2
+
+Files:     test/unit/test_token.cpp
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2016-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira
+ - initial implementation and documentation
+ Frank Pagliughi
+ - additional tests. Made this test a friend of token.
+ - updated for token::Type
+ - Converted to use Catch2
+
+Files:     src/mqtt/token.h
+Copyright: 2013-2019 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation and documentation
+ Frank Pagliughi - MQTT v5 support & server responses
+
+Files:     test/unit/test_topic.cpp
+Copyright: 2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+
+Files:     src/mqtt/CMakeLists.txt
+Copyright: 2016 -2018
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Maciel Ferreira - initial version
+ Frank Pagliughi
+ *******************************************************************************/
+
+Files:     test/unit/test_async_client_v3.cpp
+Copyright: 2017 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2019 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - initial implementation and documentation
+ Frank Pagliughi - updates
+
+Files:     src/samples/CMakeLists.txt
+Copyright: 2016 -2019
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Maciel Ferreira - initial version
+ Frank Pagliughi - Updates for new samples
+ *******************************************************************************/
+ .
+ Note: on OS X you should install XCode and the associated command-line tools
+
+Files:     test/unit/unit_tests.cpp
+Copyright: 2019 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation
+ .
+ This tells Catch to provide a main() - only do this in one cpp file
+
+Files:     test/unit/test_connect_options.cpp
+Copyright: 2016-2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Frank Pagliughi - initial implementation and documentation
+ Frank Pagliughi - Converted to Catch2
+
+Files:     test/unit/test_exception.cpp
+Copyright: 2016-2017 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira - original CppUnit implementation and documentation
+ Frank Pagliughi - Conversion to Catch2 and expansion
+
+Files:     test/unit/test_response_options.cpp
+Copyright: 2016 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira
+ - initial implementation and documentation
+ Frank Pagliughi
+ - converted to use Catch2
+ - Merged in delivery response options
+
+Files:     src/CMakeLists.txt
+Copyright: 2016-2017 Guilherme Maciel Ferreira
+           2017-2018 Frank Pagliughi
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme Maciel Ferreira - initial version
+ Frank Pagliughi - made the shared library optional
+ *******************************************************************************/
+
+Files:     test/unit/test_client.cpp
+Copyright: 2017 Guilherme M. Ferreira <guilherme.maciel.ferreira@gmail.com>
+           2020 Frank Pagliughi <fpagliughi@mindspring.com>
+License:   __UNKNOWN__
+ This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ and Eclipse Distribution License v1.0 which accompany this distribution.
+ .
+ The Eclipse Public License is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ and the Eclipse Distribution License is available at
+ http://www.eclipse.org/org/documents/edl-v10.php.
+ .
+ Contributors:
+ Guilherme M. Ferreira
+ - initial implementation and documentation
+ Frank Pagliughi
+ - updated tests for modified v1.0 client API
+ - Converted to use Catch2
+
+#----------------------------------------------------------------------------
+# xml and html files (skipped):
+#         about.html
+#         notice.html
+
+#----------------------------------------------------------------------------
+# Files marked as NO_LICENSE_TEXT_FOUND may be covered by the following
+# license/copyright files.

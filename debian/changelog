@@ -1,0 +1,6 @@
+paho.mqtt.cpp (1.2.0-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #nnnn
+    <nnnn is the bug number of your ITP>
+
+ -- Emrah Ayanoglu <>  Fri, 28 Apr 2023 09:50:31 +0300
