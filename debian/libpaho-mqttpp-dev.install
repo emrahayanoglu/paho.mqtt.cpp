@@ -1,4 +1,3 @@
 debian/libpaho-mqttpp-dev/usr/include/*
-debian/libpaho-mqttpp-dev/usr/lib/*/lib*.so
-debian/libpaho-mqttpp-dev/usr/lib/*/lib*.a
+debian/libpaho-mqttpp-dev/usr/lib/*/lib*
 debian/libpaho-mqttpp-dev/usr/lib/cmake/PahoMqttCpp/*
