@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - debian-build
+
+jobs:
+  build-deb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout main repo
+        uses: actions/checkout@v3
+        with:
+          path: main
+      
+      - name: checkout paho.mqtt.c
+        uses: actions/checkout@v3
+        with:
+          repository: emrahayanoglu/paho.mqtt.c
+          path: paho.mqtt.c
+          ref: debian-build
+
+      - uses: emrahayanoglu/build-dpkg-buster@debian-multilib-build
+        id: build
+        with:
+          args: --unsigned-source --unsigned-changes
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ github.job }}-${{ github.ref_name }}-armhf 
+          path: ${{ github.workspace }}/*.deb
